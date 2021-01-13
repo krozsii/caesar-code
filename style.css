@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::-webkit-scrollbar
+{
+    width: 0px;
+}
+
+::selection
+{
+    color: white;
+    background-color:#008B8B;
+}
+
+input[type=number]
+{
+    -moz-appearance: textfield;
+}
+
+
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('img/bg2.jpg');
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
+    overflow-x: hidden;
+}
+
+.content
+{
+    width: 100%;
+    height: 100%;
+    transform: translateY(50%);
+}
+
+h1
+{
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 48px;
+    color: #00FA9A;
+    letter-spacing: 8px;
+    font-family: Russo One;
+    text-transform: uppercase;
+    transition: 0.7s ease-in-out;
+}
+
+#karakter, #eltol, #karakter:active, #eltol:active, #karakter:focus, #eltol:focus
+{
+    margin: 0 auto;
+    display: list-item;
+    padding: 12px;
+    outline: none;
+    transition: 0.5s ease-in-out;
+}
+
+input:hover
+{
+    transform: scale(1.1);
+    background-color: rgba(0,0,0,0.5);
+}
+
+#margin
+{
+    margin: 10px;
+}
+
+#gomb
+{
+    margin: 0 auto;
+    display: list-item;
+    padding: 15px;
+    border: 0;
+    border-radius: 2px;
+    background-color: #00FA9A;
+    transition: 0.3s ease-in-out;
+}
+
+#gomb:focus, #gomb:active
+{
+    outline: none;
+}
+
+#gomb:hover
+{
+    background-color: #00FA5A;
+    border-radius: 20px;
+    transform: scale(1.1)
+}
+
+#gombSzov
+{
+    font-size: 24px;
+    color: black;
+    font-family: Russo One;
+}
+
+#karakter
+{
+    width: 300px;
+    height: 30px;
+}
+
+#eltol
+{
+    width: 205px;
+    height: 30px;
+}
+input
+{
+    background: rgba(0,0,0,0.3);
+    font-family: Hachi Maru Pop;
+    color: white;
+    text-transform: uppercase;
+}
+
+::placeholder
+{
+    color: skyblue;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#karakterMegold
+{
+    -webkit-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+    text-align: center;
+    padding: 10px;
+    color: #00FA9A;
+    font-family: Kufam;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 50px;
+    word-wrap: break-word;
+}
+
+img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0.5);
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+}
+
+
+
+
+@media (max-width: 550px)
+{
+    .content
+    {
+        width: 100%;
+        height: 100%;
+        transform: translateY(5%);
+    }
+}
